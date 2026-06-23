@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/csharp/" />
+  <Folder Name="/csharp/src/">
+    <Project Path="csharp/src/MistralSdk/MistralSdk.csproj" />
+  </Folder>
+  <Folder Name="/csharp/tests/">
+    <Project Path="csharp/tests/MistralSdk.Tests/MistralSdk.Tests.csproj" />
+  </Folder>
+</Solution>
