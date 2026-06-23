@@ -1,6 +1,6 @@
 .PHONY: help build test restore
 
-SOLUTION=/home/runner/work/mistralsdk-csharp/mistralsdk-csharp/MistralSdk.slnx
+SOLUTION=MistralSdk.slnx
 
 help:
 	@echo "Available targets:"

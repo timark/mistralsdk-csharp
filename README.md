@@ -16,13 +16,13 @@ This repository now contains a C# SDK for the Mistral AI API, targeting **.NET 1
 ## Build
 
 ```bash
-dotnet build /home/runner/work/mistralsdk-csharp/mistralsdk-csharp/MistralSdk.slnx
+dotnet build MistralSdk.slnx
 ```
 
 ## Test
 
 ```bash
-dotnet test /home/runner/work/mistralsdk-csharp/mistralsdk-csharp/MistralSdk.slnx
+dotnet test MistralSdk.slnx
 ```
 
 ## Usage

@@ -103,10 +103,15 @@ public sealed class MistralClient : IDisposable
 
         await using Stream stream = await response.Content.ReadAsStreamAsync(cancellationToken).ConfigureAwait(false);
         using var reader = new StreamReader(stream);
-        while (!reader.EndOfStream)
+        while (true)
         {
             string? line = await reader.ReadLineAsync(cancellationToken).ConfigureAwait(false);
-            if (line is null || !line.StartsWith("data: ", StringComparison.Ordinal))
+            if (line is null)
+            {
+                yield break;
+            }
+
+            if (!line.StartsWith("data: ", StringComparison.Ordinal))
             {
                 continue;
             }
